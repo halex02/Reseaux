@@ -3,13 +3,8 @@
  */
 package chat;
 
-import java.net.DatagramSocket;
-import java.net.DatagramPacket;
-import java.lang.String ;
-//import java.net.MulticastSocket;
-
 /**
- * @author halex02
+ * @author damien-lenovo
  *
  */
 public class ReceiveUDP {
