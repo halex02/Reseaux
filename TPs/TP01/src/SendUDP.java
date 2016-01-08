@@ -27,7 +27,7 @@ public class SendUDP {
 	 */
 	public static void main(String[] args) throws IOException {
 		DatagramPacket p; DatagramSocket s; 
-		InetAddress dst = InetAddress.getLocalHost();
+		InetAddress dst = InetAddress.getByName(args[0]);
 		int port = Integer.parseInt(args[1]) ; 
 		byte[] sendData = new byte[1024];
 		sendData = args[2].getBytes();
