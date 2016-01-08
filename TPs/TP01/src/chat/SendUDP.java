@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package chat;
+
+import java.net.DatagramSocket;
+import java.net.DatagramPacket;
+import java.lang.String;
+//import java.net.MulticastSocket;
+
+/**
+ * @author halex02
+ *
+ */
+public class SendUDP {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
