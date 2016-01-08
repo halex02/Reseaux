@@ -32,8 +32,7 @@ public class ReceiveUDP {
 		p = new DatagramPacket(b, 1024);
 		s.receive(p);
 		byte array[] = p.getData(); 
-		for(int i=0;i<p.getLength();i++)  
-			System.out.println(new String(array));
+		System.out.println(new String(array));
 		s.close(); 
 	}
 

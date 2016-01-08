@@ -31,7 +31,7 @@ public class SendUDP {
 		int port = Integer.parseInt(args[1]) ; 
 		byte[] sendData = new byte[1024];
 		sendData = args[2].getBytes();
-		p = new DatagramPacket(sendData, 2, dst, port); 
+		p = new DatagramPacket(sendData, sendData.length, dst, port); 
 		s = new DatagramSocket(); 
 		s.send(p); 
 		s.close(); 
