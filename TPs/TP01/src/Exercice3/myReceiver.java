@@ -4,6 +4,11 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
+/**
+ * @author damien toulouse
+ * @author alexandre houplon
+ *
+ */
 public class myReceiver extends Thread {
 
 	private InetAddress serverAdd;
@@ -24,9 +29,10 @@ public class myReceiver extends Thread {
 	
 	@Override
 	public void run() {
-		byte[] b = new byte[1024];
+		
 		try{
-			while(actif){			
+			while(actif){
+				byte[] b = new byte[1024];			
 				MulticastSocket s; 
 				DatagramPacket p; 				
 				s = new MulticastSocket(serverport); 
@@ -34,7 +40,8 @@ public class myReceiver extends Thread {
 				p = new DatagramPacket(b, 1024);
 				s.receive(p);
 				byte array[] = p.getData(); 
-				System.out.println(new String(array));
+				String msg = new String(array);
+				System.out.println("packet recu de "+p.getAddress().getHostName()+" : "+msg);
 			}
 		
 		}catch(Exception e){

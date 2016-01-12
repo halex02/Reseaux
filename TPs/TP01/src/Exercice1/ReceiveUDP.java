@@ -11,7 +11,8 @@ import java.net.SocketException;
 
 import javax.swing.plaf.basic.BasicCheckBoxMenuItemUI;
 /**
- * @author damien-lenovo
+ * @author damien toulouse
+ * @author alexandre houplon
  *
  */
 public class ReceiveUDP {

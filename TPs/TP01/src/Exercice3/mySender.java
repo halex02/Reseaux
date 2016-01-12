@@ -6,6 +6,11 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
+/**
+ * @author damien toulouse
+ * @author alexandre houplon
+ *
+ */
 public class mySender extends Thread {
 
 	private InetAddress serverAdd;
@@ -28,7 +33,6 @@ public class mySender extends Thread {
 		try{
 			while(actif){
 				String msg = read.readLine();
-				System.out.println(msg);
 				MulticastSocket s;
 				DatagramPacket p ;
 				byte[] sendData = new byte[1024];
@@ -36,7 +40,6 @@ public class mySender extends Thread {
 				p = new DatagramPacket(sendData, sendData.length, serverAdd, serverport);
 				s= new MulticastSocket();
 				s.send(p);
-				s.close();
 			}
 		}
 		catch(Exception e){

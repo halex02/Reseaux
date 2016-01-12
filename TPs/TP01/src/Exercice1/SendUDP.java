@@ -13,7 +13,8 @@ import java.lang.String;
 //import java.net.MulticastSocket;
 
 /**
- * @author halex02
+ * @author damien toulouse
+ * @author alexandre houplon
  *
  */
 public class SendUDP {

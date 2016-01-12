@@ -4,6 +4,11 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
+/**
+ * @author damien toulouse
+ * @author alexandre houplon
+ *
+ */
 public class ReceiveMulticast {
 
 	public ReceiveMulticast() {

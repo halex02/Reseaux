@@ -5,11 +5,8 @@ import java.net.InetAddress;
 import java.net.MulticastSocket;
 
 /**
- * 
- */
-
-/**
- * @author damien-lenovo
+ * @author damien toulouse
+ * @author alexandre houplon
  *
  */
 public class SendMulticast {
