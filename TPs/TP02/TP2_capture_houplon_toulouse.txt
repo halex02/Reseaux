@@ -1,0 +1,13 @@
+1) elle liste les interfaces réseaux de la machine
+2) eth0 et lo
+3) eth0
+4) 	mac : 98:90:96:BB:8f:55
+	ipv4 : 192.168.5.71
+5) ping 192.168.5.72
+6) temps de transmission + acusée de réception = round trip time
+7) les adresse mac sont unique, fournie par le constructeur et ne contienne aucune information sur le réseaux au quel appartien la machine,
+ les adresse ip sont des adresse de réseaux, il est possible de les utiliser pour retrouver le réseaux au quel la machine appartien
+8) des paquet ICMP, un pour la requete, un pour l'accusé de réception
+9) couche réseaux
+10) ip == 192.168.5.72
+11) host 192.168.5.72

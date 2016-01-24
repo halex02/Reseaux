@@ -1,0 +1,9 @@
+1)	le code du protocol supérieur est 0x0800 (corespondant au Internet Protocol version 4 (IPv4))
+2) 	destination sur 12 octet
+	source sur 12 octet
+3)	full duplex 100Mb/s
+	mii-tool donne des information sur les caractéristique de l'interface résaux et permet de les modifier au niveau de la couche matériel
+	ethtool connaitre et modifier les config de l'interface résaux au niveau 
+4)	eth0 n'est plus running sur ifconfig
+mii-tool eth0:no link
+5)	en supprimant l'ip route avec route del -net default il est impossible de se connecter
