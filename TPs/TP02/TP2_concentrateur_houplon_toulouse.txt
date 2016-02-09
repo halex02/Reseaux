@@ -1,0 +1,22 @@
+Question 1 :
+Le poste passif reçoit les paquets des pings des deux autres machines.
+On en déduit que le concentrateur "broadcast" les paquets sur toutes les machines du réseaux (y compris la machine émettrice)
+
+Question 2 :
+Le mode promiscuous permet de voir le trafic sur tout le réseau.
+
+Question 3 :
+Le mode de duplex utilisé est : HALF ; ie. emetteurs et recepteurs ne parlent pas en même temps pour éviter les collisions.
+
+Question 4 :
+topologie physique : étoile
+topologie logique : bus
+
+Question 5 :
+collision (avant) : 0
+collision (après) : 0
+débit : 8.92 Mbits/s
+
+Le débit est divisé est par le nombre de postes.
+
+

@@ -1,0 +1,24 @@
+Question 6 :
+On constate que le routeur s'est intercalé dans la communication entre les deux machines.
+adresse source : 30:B5:C2:04:E5:FE
+adresse destination : F0:7F:06:BB:FB:C0
+Ce sont sans doute les interfaces du pc envoyeur et du routeur.
+
+Question 8 :
+On ne reçoit pas les paquets multicast venant des pcs sur le switch.
+
+Question 9 :
+Les PCs sur le switch ne recoivent pas les paquets issus de la machine connectée au routeur.
+
+Question 10 :
+On arrive maintenant à envoyer des informations entre les deux côtés du routeur (ip : 192.168.5.62).
+On reçoit également une réponse du routeur (ip : 192.168.1.200).
+Il est désactivé, car il permet à une machine extérieure au réseau de communiquer avec celle qui y sont connectées.
+
+Question 11 :
+unicast : communication vers une machine particulière.
+limitée : possibilité de broadcaster sur le réseau local.
+dirigée : broadcast possible dans un sens mais pas dans l'autre.
+
+Question 12 :
+Le routeur envoie aussi une réponse. Le routeur se comporte comme une machine du réseau, il est capable de répondre si il est sollicité.

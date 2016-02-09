@@ -1,0 +1,18 @@
+Question 1 :
+Le commutateur, contrairement au concentrateur, est capable de dispatcher les messages vers leurs destinataires respectifs.
+
+Question2 :
+On retrouve bien les adresses mac des machines connectées au switch, qui les obtient en analysant les adresses mac des requêtes passant par lui
+et les associe à ses ports dans la table d'adresses mac. Le rôle de cette table est de permettre au switch de savoir où transférer les requêtes.
+
+Question 3 :
+Il est au niveau 2 (couche liaison de donnée) de la couche OSI. Il utilise à la fois les adresses mac et ip : le switch envoie des trames entières.
+Le hub est au niveau 1 de la couche OSI (couche physique) : le hub envoie des bits.
+
+Question 4 :
+Contrairement au hub, le switch sait ce qu'il envoie à qui.
+
+Question 5 :  
+Toutes les machines connectées au switch reçoivent les paquets IP.
+Ce type de transfert s'appelle du broadcast.
+L'adresse est : FF:FF:FF:FF:FF:FF.
