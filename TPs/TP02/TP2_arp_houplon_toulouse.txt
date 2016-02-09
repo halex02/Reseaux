@@ -1,0 +1,26 @@
+Question 1 :
+sudo arp -s <adresse_ip> <adresse_mac>
+
+Question 2 :
+La machine dont on a utilisé l'adresse ip pour la commande ping ne reçoit aucun paquet,
+c'est la machine à laquelle on a fait la correspondance entre cette adresse ip avec son adresse mac (dans la table ARP) qui les reçoit.
+Le cache ARP sert à définir des relations adresses ip<->adresses mac.
+
+Question 3 :
+Avant le ping, la table ARP ne savait pas à quelle adresse mac associer l'adresse ip.
+On effectue le ping et on arrive à envoyer les paquets.
+On consulte la table arp et on s'aperçoit qu'elle a associé l'adresse ip à une adresse mac.
+En analysant les trames sur wireshark, on se rend compte qu'il y a des paquets arp envoyés vers le switch qui lui demandent à qui appartient l'adresse ip.
+Conclusion : elle a récupéré l'adresse mac grâce au switch.
+
+Question 4 :
+Le code associé au protocole arp dans l'en-tête ethernet est : 0806.
+
+Question 5 :
+C'est le champ "target mac adress", il est initialisé à l'adresse mac 0:0:0:0:0:0, il servira à stocker l'adresse mac cible.
+
+Question 6 :
+Il contient l'adresse mac de la cible de la demande.
+
+Question 7 :
+Ces motifs répétitifs sont des octets destinés à combler un vide dans la taille normalisé d'un paquet ARP.
