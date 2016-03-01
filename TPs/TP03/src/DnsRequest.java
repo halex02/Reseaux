@@ -20,7 +20,15 @@ public class DnsRequest {
 		ds.close();
 	}
 	
-	public void receiveDNS() {
+	public void receiveDNS() throws IOException {
+		InetAddress provenance ;		
+		DatagramSocket ds ;
+		DatagramPacket dp ;
+		dp = new DatagramPacket(new byte[512],512) ;
+		ds = new DatagramSocket ();
+		ds.receive(dp);
+		byte[] rep = dp.getData();
+		System.out.println(rep); 
 		
 	}
 	
