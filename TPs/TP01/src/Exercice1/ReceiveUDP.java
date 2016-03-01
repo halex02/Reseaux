@@ -1,3 +1,5 @@
+package Exercice1;
+
 /**
  * 
  */
@@ -29,7 +31,7 @@ public class ReceiveUDP {
 		DatagramSocket s; 
 		DatagramPacket p; 
 		byte[] b = new byte[1024];
-		s = new DatagramSocket(Integer.parseInt(args[0])); 
+		s = new DatagramSocket(5001); 
 		p = new DatagramPacket(b, 1024);
 		s.receive(p);
 		byte array[] = p.getData(); 
