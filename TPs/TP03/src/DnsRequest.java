@@ -17,19 +17,16 @@ public class DnsRequest {
 		DatagramSocket ds ;
 		ds = new DatagramSocket() ;
 		ds.send(dp);
-		ds.close();
-	}
-	
-	public void receiveDNS() throws IOException {
-		InetAddress provenance ;		
-		DatagramSocket ds ;
-		DatagramPacket dp ;
-		dp = new DatagramPacket(new byte[512],512) ;
-		ds = new DatagramSocket ();
+		dp = new DatagramPacket(new byte[512],512);
 		ds.receive(dp);
 		byte[] rep = dp.getData();
-		System.out.println(rep); 
-		
+		System.out.println(dp.getLength());
+		for(int i = 0; i < dp.getLength(); i++) {
+		    System.out.print(","+Integer.toHexString((rep[i])&0xff));
+		    if ((i+1)%16 == 0)
+			System.out.println("");
+		}
+		ds.close();
 	}
 	
 	

@@ -72,7 +72,7 @@ public class DNSsimple
 	/* affichage complet du packet recu (pas tres lisible ...) */
 	byte[] rec = dp.getData();
 	System.out.println("- message length : " + dp.getLength());
-       	System.out.println("- message : \n" + new String(rec, 0, dp.getLength()));
+       	System.out.println(new String(rec));
 	
 	/* affichage des bytes */
 	for(int i = 0; i < dp.getLength(); i++) {
